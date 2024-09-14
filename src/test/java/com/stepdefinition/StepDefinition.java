@@ -23,7 +23,7 @@ public class StepDefinition extends BaseClass {
 
 //	public static WebDriver driver;
 
-	public static LoginPage log;
+//	public static LoginPage log;
 	public static PageObjectManager pom;
 	private static final Logger logger = LogManager.getLogger(StepDefinition.class);
 
