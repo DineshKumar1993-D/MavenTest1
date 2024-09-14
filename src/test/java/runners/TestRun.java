@@ -27,7 +27,7 @@ public class TestRun extends BaseClass {
 	public static void setUp() {
 		
 		
-		browserLaunch("edge");
+		browserLaunch("chrome");
 		
 	}
 	@AfterClass
