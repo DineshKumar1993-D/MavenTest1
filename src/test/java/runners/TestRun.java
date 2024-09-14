@@ -13,9 +13,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 @CucumberOptions(features="src//test//java//features",
 					glue = "com.stepdefinition",
 				plugin ={"pretty",
-						"html:Reports/HtmlReport.html",
-						"json:Reports/JsonReport.json",
-"com.cucumber.listener.ExtentCucumberFormatter:Reports/Extent_Report.html"},
+						"html:target/HtmlReport.html",
+						"json:target/JsonReport.json",
+"com.cucumber.listener.ExtentCucumberFormatter:target/Extent_Report.html"},
 			monochrome=true,
 			dryRun =false,
 			strict=false)
