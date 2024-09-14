@@ -1,0 +1,77 @@
+Logger:
+
+	Levels of Logging:
+
+	trace: Finest-grained information, typically used for debugging.
+	debug: Information for debugging, less verbose than trace.
+	info: General information about the application's running state.
+	warn: Indicates potentially harmful situations.
+	error: Logs errors that allow the application to continue running.
+	fatal: Severe errors that may cause the application to abort.
+	
+	Example:
+
+	logger.debug("Debugging information");
+	logger.info("This is an info message");
+	logger.warn("This is a warning");
+	logger.error("This is an error");
+	logger.fatal("This is a fatal error");
+	
+Appenders
+	
+	Appenders are responsible for writing log messages to different destinations (e.g., files, consoles, databases).
+	
+	Common Appenders:
+	
+	ConsoleAppender: Logs messages to the console.
+	FileAppender: Logs messages to a file.
+	RollingFileAppender: Logs messages to a file and rolls over when a specified size or date/time is reached.
+	DailyRollingFileAppender: Rolls over the log file daily.
+	JDBCAppender: Logs messages to a database via JDBC.
+	SMTPAppender: Sends log messages via email.
+	
+Layouts
+	
+	Layouts define the format in which log messages are rendered or delivered.
+	
+	Common Layouts:
+	
+	PatternLayout: Allows you to specify a pattern for formatting log messages.
+	HTMLLayout: Formats the log messages in an HTML table.
+	XMLLayout: Formats the log messages in XML format.
+	JSONLayout: Formats the log messages in JSON format.
+	
+Filters
+	
+	Filters control which log messages are allowed to be logged.
+	
+	Common Filters:
+	
+	ThresholdFilter: Only allows messages at or above a specified logging level.
+	DenyAllFilter: Rejects all logging requests.
+	RegexFilter: Filters messages based on a regular expression.
+	
+Loggers Configuration
+	
+	Configuring the loggers allows fine-grained control over which log messages are recorded and where.
+	
+	Root Logger:
+
+	The root logger is the base logger from which all other loggers inherit.
+	Usage Example:
+	xml
+	Copy code
+	<Root level="info">
+	    <AppenderRef ref="ConsoleAppender"/>
+	</Root>
+	
+	Custom Loggers:
+	
+	You can define loggers for specific packages or classes.
+	Usage Example:
+	xml
+	Copy code
+	<Logger name="com.example" level="debug" additivity="false">
+	    <AppenderRef ref="FileAppender"/>
+	</Logger>
+	

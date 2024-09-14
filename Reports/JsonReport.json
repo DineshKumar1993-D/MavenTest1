@@ -1,0 +1,98 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User Checks The Login Functionality",
+        "description": "",
+        "id": "to-test-the-adactin-hotel-booking-application;user-checks-the-login-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8500399499,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user Launch The Url Of The Adactin Application",
+            "match": {
+              "location": "StepDefinition.user_Launch_The_Url_Of_The_Adactin_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 267226100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Enter The Following Credentials In The Respective Field",
+            "match": {
+              "location": "StepDefinition.user_Enter_The_Following_Credentials_In_The_Respective_Field(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "Password"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "Java@123",
+                  "32675672"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "Selenium",
+                  "2676732"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Cypress",
+                  "2765673"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 521388500,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 11,
+                "value": "#When user Enter The Username \"\u003cUsername\u003e\"In The Respective Field"
+              },
+              {
+                "line": 12,
+                "value": "#And user Enter The Password \"\u003cPassword\u003e\" In The Respective Field"
+              }
+            ],
+            "line": 13,
+            "name": "user Clicks The Loginbutton and Its Navigates The Search hotel Page",
+            "match": {
+              "location": "StepDefinition.user_Clicks_The_Loginbutton_and_Its_Navigates_The_Search_hotel_Page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To Test The Adactin Hotel Booking Application",
+    "description": "",
+    "id": "to-test-the-adactin-hotel-booking-application",
+    "keyword": "Feature",
+    "uri": "FeatureAdac.feature"
+  }
+]
